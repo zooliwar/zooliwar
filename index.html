@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakugan Welt</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
         }
         header {
             background-color: #ff5733;
@@ -19,7 +22,7 @@
         }
         section {
             padding: 20px;
-            margin: 10px;
+            margin: 20px;
             background-color: white;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,6 +33,14 @@
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(50% - 10px);
         }
         footer {
             background-color: #333;
@@ -53,7 +64,6 @@
 
     <section>
         <h2>Beliebte Bakugans</h2>
-        <p>Hier sind einige der bekanntesten Bakugans:</p>
         <ul>
             <li>Drago</li>
             <li>Tigrerra</li>
@@ -65,11 +75,12 @@
 
     <section>
         <h2>Galerie</h2>
-        <p>Hier kannst du Bilder von Bakugans hinzufügen:</p>
-        <img src="hier-link-einfügen.jpg" alt="Bakugan Bild 1">
-        <p>**Hier Link einfügen**</p>
-        <img src="hier-link-einfügen.jpg" alt="Bakugan Bild 2">
-        <p>**Hier Link einfügen**</p>
+        <div class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Dragonoid_Bakugan.jpg" alt="Bakugan Drago">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Tigrerra_Bakugan.jpg" alt="Bakugan Tigrerra">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Hydranoid_Bakugan.jpg" alt="Bakugan Hydranoid">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Skyress_Bakugan.jpg" alt="Bakugan Skyress">
+        </div>
     </section>
 
     <footer>
